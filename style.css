@@ -1,0 +1,155 @@
+/* Styling navigation */
+
+#nasa{
+  background-image:url("img/nasa.png");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+}
+body{
+    position:fixed;
+    overflow:hidden;
+}
+.nav #ass {
+    color: white;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 17px;
+   
+    
+  }
+  #but {
+    width:120%;
+    
+  }
+  .active{
+  width: 22%;
+  text-decoration: none;
+  font-size:150%;
+  
+  }
+  .nav #myLinks {
+    display: none;
+  }
+
+ .nav {
+    overflow: hidden;
+  
+    position: relative;
+    height: ;
+    background-color: black;
+    display: flex;
+    
+  }
+  button{
+    width: 100%;
+  }
+  
+  
+   #ass{
+    background-image: url("img/hamburger.png");
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    display: block;
+    right: 0;
+    top: 5px;
+    position: absolute;
+   
+  }
+
+  
+  .active {
+    
+    color: rgb(0, 0, 0);
+    
+  }
+  
+ 
+  
+  
+  .container {
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  /* clock position */
+  #clock-display{
+      z-index: 2;
+      position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  /* alt styles */
+  @mixin includecyberstyle {
+    @import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+    body {
+        background-color: black;
+        color: rgb(253, 238, 238);
+        font-style: italic;
+      
+        font-family: 'Orbitron', courier, sans-serif;
+        text-shadow: 0 0 0 transparent, 0 0 10px #ef00ff7a, 0 0 20px #ef00ff59, 0 0 40px #ef00ff59, 0 0 100px #ef00ff, 0 0 200px #ef00ff, 0 0 300px #ef00ff66, 0 0 500px #ef00ff, 0 0 1000px #ef00ffad;
+      
+    }
+    #clock-display{-webkit-animation: blink 4s infinite alternate;
+        animation: blink 4s infinite alternate;}
+    @-webkit-keyframes blink {
+     
+        40% {
+          opacity: 1;
+        }
+        42% {
+          opacity: 0.8;
+        }
+        43% {
+          opacity: 1;
+        }
+        45% {
+          opacity: 0.2;
+        }
+        46% {
+          opacity: 1;
+        }}
+      
+}
+img{
+  width: 150%;
+}
+@media only screen and (min-width: 700px) {
+
+  img{width: 100%;}
+  #but {
+    width:280%;
+    
+  }
+  button{
+    width: 32%;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+
+  img{width: 100%;}
+  #but {
+    width:400%;
+    
+  }
+  
+}
+
+
+@media only screen and (max-height:250px) {
+
+  #clock-display{
+    
+height:10%;
+
+}
+
+}

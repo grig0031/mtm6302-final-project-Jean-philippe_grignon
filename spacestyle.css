@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    background-color: black;
+    color: rgb(253, 238, 238);
+   
+  
+    font-family: 'Bebas Neue', cursive;
+  
+}
+#time-display {
+    font-size: 4rem;
+    
+}
+button{
+    background-color: #00000070; /* Green */
+  border: none;
+    color: white;
+
+  shadow 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow:  0 0 10px #c0c9f5ad, 0 0 40px #6c6d6cad, 0 0 80px #fdfdfd;
+
+  }
+  button:hover {
+    color: #ffffff;
+    background: #000000;
+    box-shadow: 0 0 10px #c0c9f5ad, 0 0 40px #6c6d6cad, 0 0 80px #fdfdfd;
+    transition-delay: 1s;
+}
+
+  select {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    
+  }
+  @media only screen and (max-width: 400px) {
+
+  select {
+    
+    width: 80%;
+  }
+}
